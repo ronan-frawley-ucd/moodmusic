@@ -1,0 +1,54 @@
+<% if session[:genre] == "music" %>
+  <div class="alert fade in alert-success ">
+    <button class="close" data-dismiss="alert">&times;</button>
+    <h6>Important information regarding cookies and NewDis.co</h6>
+    <p class="cookies">By using this website, you consent to the use of cookies in accordance with our Policy (<%= link_to("See Here", contact_path) %>).</p>
+  </div>
+  <% session[:check_cookie] == 1 %>
+<% end %>
+
+<article>
+  <h1>Discover</h1>
+  <h3>New Music</h3>
+  <%= render :partial => 'selecting' %>
+</article>
+
+<section class="well" style="display:none;">
+  <div id="twitter-outer">
+    <div id="twitter-button">
+      <a href="https://twitter.com/intent/tweet?button_hashtag=newDisco&text=Discover New Music with me..! http://www.newdis.co" class="twitter-hashtag-button" data-related="RonanFrawley">Tweet #TwitterStories</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+    </div>
+  </div>
+  <!--<h2>The Disco Diet</h2>-->
+  <% if false %>
+  <p>
+    <%= "#{@notice}".html_safe %>
+  </p>
+  <% end %>
+  <h3>Do you find it hard to Discover new Music?</h3>
+  <p>
+    We know how tricky this can be. It's hard to move past the BS. The current institutions regard musical acts as Products... and you just want to listen to a some serious beats... 
+  </p>
+  <p>
+    NewDisco has you covered! We will take genre information and create playlists of new music for you. Playlist are made on the fly and will feature music that you have not heard before. You can like and share songs through your social media.
+  </p>
+  <h3>Where does the new Music come from?</h3>
+  <p>
+    NewDisco uses Music sharing websites to bring you something different. These include SoundCloud, Bandcamp and LastFM. Most of the song you hear will be amateur artists. This means that everything you hear will be fresh and different!
+  </p>
+  <p>
+    We can pretty much guarantee that you will find something you like here. If you are a member of any of these websites, you can add anything you like to your own library. You can also share new music with friends and followers
+  </p>
+  <p>
+    Music is not a business to you. You don't consider yourself a consumer. You don't love music because of the product. NewDisco is all about your passion for <strong>Discovering</strong> new music.
+  </p>
+  <h3>About NewDisco</h3>
+  <p id="ronan_above">
+    NewDisco was built by this guy...
+  </p>
+  <div id="ronan">
+    <a class="twitter-timeline" href="https://twitter.com/RonanFrawley" data-widget-id="506563414320099328">Tweets by @RonanFrawley</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  </div>
+</section>

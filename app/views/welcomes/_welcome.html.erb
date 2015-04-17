@@ -1,0 +1,17 @@
+<article>
+	<h1>New <%= @this_is_the_dropdown_value.capitalize %> Music</h1>
+	<div id="prev_next">
+		<%= link_to new_welcome_path, onclick: "loading_next();", onMouseover: "change_red();", onMouseout: "change_white();", :id => "next-link", :method => :post do %>
+			<button type="button" id="next-button" class="btn btn-success">
+				<i id="next-arrow" class="fa fa-angle-double-right fa-4x" id="right_arrows"></i>
+				<p id="next-song-text">Next<br />Song!</p>
+			</button>
+		<% end %>
+	</div>
+	<%= "<iframe scrolling='no' frameborder='no' width='100%' src='https://w.soundcloud.com/player/?url=#{@individual_tune[:song_list]}&color=c1272d&show_comments=true&auto_play=true&show_artwork=true&buying=true&download=true'>".html_safe %></iframe>
+	<%= render :partial => 'selecting' %>
+
+	<% if session[:next] && session[:next] < @number_of_next_sessions %>
+		<%= render :partial => 'finishing' %>
+	<% end %>
+</article>

@@ -1,0 +1,510 @@
+@import "twitter/bootstrap/bootstrap";
+
+#next-link:link, #next-link:hover, #next-link:active, #next-link:visited{
+  text-decoration: none;
+  background-color: transparent;
+}
+#next-song-text{
+  display: none;
+  float: left;
+  width: auto;
+  height: auto;
+}
+a i.fa{
+  margin-top: -13px;
+  color: #eee;
+}
+a:link i.fa, a:visited i.fa{
+  text-decoration: none;
+}
+a:hover i.fa, a:active i.fa{ 
+  color: white;
+}
+btn-success:hover{
+  border: 5px solid white !important;
+  border-radius: 50px;
+}
+.btn-success{
+  margin-right: -30px;
+  border: 5px solid white !important;
+  border-radius: 50px;
+  padding-top: 15px;
+  padding-left: 18px;
+  overflow: hidden;
+}
+.btn-success:focus{
+    outline:0px !important;
+    -webkit-appearance:none;
+}
+#prev_next{
+  position:relative;
+  width: 100%;
+  height: 78px;
+  text-align: right;
+}
+#social-inner{
+  padding-top: 4px;
+  padding-right: 2px;
+  background-color: #bbb;
+  width: 260px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0px solid;
+  border-radius: 6px;
+}
+.social{
+  margin-bottom: 35px;
+}
+.adsense2{
+  margin-top: 55px;
+}
+.adsense1{
+  margin-bottom: 40px;
+}
+/******* Twitter *******/
+.social-share-button > .social-share-button-twitter {
+  display: inline-block;
+  margin: 15px;
+  margin-left: -10px;
+  width: 16px;
+  height: 16px;
+  background: url("/assets/twitter.png") no-repeat;
+}
+.social-share-button > .social-share-button-twitter:after {
+  content: "\f081"; 
+  font-family: FontAwesome;
+  font-size: 55px;
+  position: absolute;
+  color: #4099FF;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.social-share-button > .social-share-button-twitter:hover:after {
+  color: #222;
+}
+/******* Facebook *******/
+.social-share-button > .social-share-button-facebook {
+  display: inline-block;
+  margin: 15px;
+  width: 16px;
+  height: 16px;
+  background: url("/assets/twitter.png") no-repeat;
+}
+.social-share-button > .social-share-button-facebook:after {
+  content: "\f082"; 
+  font-family: FontAwesome;
+  font-size: 55px;
+  position: absolute;
+  color: #3B5999;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.social-share-button > .social-share-button-facebook:hover:after {
+  color: #222;
+}
+/******* Google+ *******/
+.social-share-button > .social-share-button-google_plus {
+  display: inline-block;
+  margin: 15px;
+  width: 16px;
+  height: 16px;
+  background: url("/assets/google_plus.png") no-repeat;
+}
+.social-share-button > .social-share-button-google_plus:after {
+  content: "\f0d4"; 
+  font-family: FontAwesome;
+  font-size: 55px;
+  position: absolute;
+  color: #dd4b39;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.social-share-button > .social-share-button-google_plus:hover:after {
+  color: #222;
+}
+/******* Tumblr *******/
+.social-share-button > .social-share-button-tumblr {
+  display: inline-block;
+  margin: 15px;
+  width: 16px;
+  height: 16px;
+  background: url("/assets/tumblr.png") no-repeat;
+}
+.social-share-button > .social-share-button-tumblr:after {
+  content: "\f174"; 
+  font-family: FontAwesome;
+  font-size: 55px;
+  position: absolute;
+  color: #35465c;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.social-share-button > .social-share-button-tumblr:hover:after {
+  color: #222;
+}
+/******* Pinterest *******/
+.social-share-button > .social-share-button-pinterest {
+  display: inline-block;
+  margin: 15px;
+  width: 16px;
+  height: 16px;
+  background: url("/assets/pinterest.png") no-repeat;
+}
+.social-share-button > .social-share-button-pinterest:after {
+  content: "\f0d3"; 
+  font-family: FontAwesome;
+  font-size: 55px;
+  position: absolute;
+  color: #C92228;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.social-share-button > .social-share-button-pinterest:hover:after {
+  color: #222;
+}
+.simple_captcha{
+  margin-top: -15px !important;
+}
+.simple_captcha_refresh_button{
+  font-size: 16px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 700;
+}
+.simple_captcha_refresh_button a:link{
+  color: #222;
+}
+.simple_captcha_refresh_button a:hover{
+  background-color: deepskyblue;
+  color: #333;
+}
+.simple_captcha{
+  border: 0px solid #ccc !important;
+}
+.overline-title{
+  text-decoration: overline;
+}
+#submit-button{
+  margin-top: 15px;
+}
+.no-button-footer{
+  background-color:#171111;
+  color: #ddd;
+  text-align: center;
+  margin: 5px;
+}
+#policy-wrapper{
+  margin-left: auto;
+  margin_right: auto;
+  width: 100%;
+  min-height: 80%;
+}
+section.policy{
+  height: auto;
+  width: 70%;
+  background-color: deepskyblue;
+  border-color: deepskyblue;
+  text-align: center;
+  padding: 10px;
+  border: 1px;
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+.policy p{
+  /* fill me in */
+}
+#contact-form{
+  margin-left: auto;
+  margin_right: auto;
+  width: 100%;
+  min-height: 80%;
+}
+section.contact{
+  height: auto;
+  width: 280px;
+  background-color: deepskyblue;
+  border-color: deepskyblue;
+  text-align: center;
+  padding: 10px;
+  border: 1px;
+  border-radius: 5px;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+.alert-error {
+background-color: #f2dede;
+border-color: #eed3d7;
+color: #b94a48;
+text-align: left;
+}
+.alert-alert {
+background-color: #f2dede;
+border-color: #eed3d7;
+color: #b94a48;
+text-align: left;
+}
+.alert-success {
+background-color: #dff0d8;
+border-color: #d6e9c6;
+color: #468847;
+text-align: left;
+}
+.alert-notice {
+background-color: #dff0d8;
+border-color: #d6e9c6;
+color: #468847;
+text-align: left;
+}
+#loading_gif{
+  padding-top: 45px;
+}
+h6{
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
+  font-size: 15px;
+  color: #666;
+}
+p.cookies{
+  font-family: "Courier New", Courier, monospace;
+  font-size: 12px;
+  font-weight: 600;
+}
+p.cookies a:hover{
+  background-color: transparent;
+  color: black;
+}
+.logo{
+  float: left;
+  height: 32px;
+  width: 200px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 8px;
+  margin-bottom: 0px;
+}
+a:hover.logo{
+  background-color: #ff1a32;
+}
+.copyright{
+  color: #ddd;
+  text-align: center;
+}
+hr{
+  background-color:#444;
+  border-width:0;
+  color:#444;
+  height:1px;
+  line-height:0;
+  width:100%;
+  margin-bottom: 30px;
+}
+a.footer_btn:link, a.footer_btn:visited, a.footer_btn:active{
+  background-color:#171111 !important;
+  color: #ddd;
+  text-align: center;
+  margin: 5px;
+}
+a.footer_btn:hover{
+  background-color: #333 !important;
+  color: #fff;
+}
+footer{
+  margin-top: 100px;
+  float: left;
+  width: 100%;
+  height: auto;
+  background-color:#171111;
+  padding: 10%;
+  padding-top: 50px;
+  padding-bottom: 25px;
+  font-family: "Courier New", Courier, monospace;
+}
+.navbar{
+  background-color: #ff1a32;
+  border: 0px solid #000;
+  margin-bottom: 60px;
+}
+.bandcamp{
+  float: left;
+  width: 100%;
+  height: 350px;
+  margin-right: -10px;
+  margin-left: -10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.container{
+  margin: 0px;
+  margin-left: 4%;
+  margin-right: 4%;
+  width: 92%;
+}
+#twitter-widget-0, #twitter-widget-1, #twitter-widget-2, #twitter-widget-3, 
+#twitter-widget-4, #twitter-widget-5, #twitter-widget-6 {
+  float: left; 
+  width: 90% !important;
+  font-size: 12px;
+  border: 0px solid midnightblue !important;
+  margin-left: 5% !important;
+}
+.sidebar-nav{
+  color: #aaa;
+}
+.tweets{
+  float: left;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+.amzn{
+  float: left;
+  height: 280px;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 0px;
+  background-color: midnightblue;
+  text-align: center;
+}
+html, body{
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  background-color: midnightblue !important;
+}
+section.well{
+  height: auto;
+  width: 100%;
+  background-color: deepskyblue;
+  border-color: deepskyblue;
+  text-align: center;
+  padding: 10px;
+  border: 1px;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+section.well #ronan_above{
+  color: darkslategrey;
+  font-size: 15px;
+  margin: 15px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  line-height: 160%;
+  text-align: center;
+}
+section.well p{
+  color: darkslategrey;
+  font-size: 15px;
+  margin: 15px;
+  line-height: 160%;
+  text-align: justify;
+  text-justify: inter-word;
+}
+article{
+  height: auto;
+  width: 100%;
+  background: url('backgroundnote.png') ;
+  background-repeat: no-repeat;
+  background-position:right bottom;
+  background-color: deepskyblue;
+  border-color: black;
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 10px;
+  border: 1px;
+  border-radius: 5px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bolder;
+}
+article p{
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bolder;
+}
+/*********************************************************/
+article h1{
+  margin-top: 0px;
+  margin-bottom: 20px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  color: #EFEFEF;
+}
+h2{
+  font-family: "Courier New", Courier, monospace;
+  color: #EFEFEF;
+  text-align: center;
+}
+h3{
+  color: #EFEFEF;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+}
+section.well h2{
+  text-decoration: overline;
+  font-size: 26px;
+}
+section.well h3{
+  text-decoration: overline;
+}
+h4{
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
+  text-decoration: overline;
+  color: #bbb;
+}
+h5{
+  color: #EFEFEF;
+  font-family: "Courier New", Courier, monospace;
+}
+#twitter-outer{
+  float: left;
+  width: 100%;
+  height: auto;
+}
+#twitter-button{
+  width: 130px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+#getting_song{
+  width: auto;
+  height: 133px;
+}
+
+// Set the correct sprite paths
+@iconSpritePath: image-url("twitter/bootstrap/glyphicons-halflings.png");
+@iconWhiteSpritePath: image-url("twitter/bootstrap/glyphicons-halflings-white.png");
+
+// Set the Font Awesome (Font Awesome is default. You can disable by commenting below lines)
+@fontAwesomeEotPath: font-url("fontawesome-webfont.eot");
+@fontAwesomeEotPath_iefix: font-url("fontawesome-webfont.eot?#iefix");
+@fontAwesomeWoffPath: font-url("fontawesome-webfont.woff");
+@fontAwesomeTtfPath: font-url("fontawesome-webfont.ttf");
+@fontAwesomeSvgPath: font-url("fontawesome-webfont.svg#fontawesomeregular");
+
+// Font Awesome
+@import "fontawesome/font-awesome";
+
+// Glyphicons
+//@import "twitter/bootstrap/glyphicons.less";
+
+// Your custom LESS stylesheets goes here
+//
+// Since bootstrap was imported above you have access to its mixins which
+// you may use and inherit here
+//
+// If you'd like to override bootstrap's own variables, you can do so here as well
+// See http://twitter.github.com/bootstrap/customize.html#variables for their names and documentation
+//
+// Example:
+// @link-color: #ff0000;

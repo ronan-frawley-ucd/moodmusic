@@ -1,0 +1,17 @@
+<div id="getting_song" style="padding-top:50px;">
+  <%= form_tag(new_welcome_path, method: "post") do %>
+      <select id="dropdown_cases_" class="btn" name="dropdown_cases[]" style="display:inline;")>
+      <%  count=0 
+          @genre_list.each do |genre| %>
+            <% if count==@random_number %>
+                  <%= "<option value='#{genre}' selected>#{genre}</option>".html_safe %>
+            <% else %>
+                  <%= "<option value='#{genre}'>#{genre}</option>".html_safe %>
+            <% end %>
+      <%  count+=1
+          end %>
+      </select>
+      <%= submit_tag("Get Song!", id: "song", class: "btn btn-default btn-lg", onclick: "loading();", :style => "display:inline;") %>
+      <%= image_tag("loader.gif", :alt => "loading gif image", id: "loading_gif", :style => "display:none") %>
+  <% end %>
+</div>

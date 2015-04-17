@@ -1,0 +1,13 @@
+<%= javascript_tag do %>
+
+	var widget = SC.Widget(document.querySelector('iframe'));
+
+	widget.bind(SC.Widget.Events.FINISH, function() {
+		document.getElementById("song").style.display="none";
+		document.getElementById("loading_gif").style.display="inline";
+		document.getElementById("dropdown_cases_").style.display="none";
+		document.getElementById("getting_song").style.paddingTop="0px";
+		<%= "window.location.href = 'http://www.newdis.co/song?genre=#{params[:genre]}';".html_safe %>
+	});
+
+<% end %>

@@ -1,0 +1,33 @@
+<div id="contact-form">
+  <section class="contact">
+    <%= bootstrap_flash %>
+    <div align="center">
+      <h3 class="overline-title">send us a message</h3>
+      <br />
+
+      <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
+        <%# f.input :name, :required => true, :class => 'form-group' %>
+
+        <p class="form_paragraph"><%= f.label(:name, "Name") %>
+        <br />
+        <%= f.text_field(:name, :required => true) %></p>
+
+        <p class="form_paragraph"><%= f.label(:email, "Email") %>
+        <br />
+        <%= f.text_field(:email, :required => true) %></p>
+
+        <p class="form_paragraph"><%= f.label(:message, "Message") %>
+        <br />
+
+        <%= f.text_area(:message, :cols => 24, :rows => 7, :as => :text, :required => true) %></p>
+
+        <p class="form_paragraph"><%= f.label("Captcha") %>
+        <%= show_simple_captcha(:label => "", :placeholder => "Enter Captcha...") %></p>
+
+        <p class="form_submit">
+          <%= submit_tag 'Send Message', class: "btn btn-default btn-lg", :id => "submit-button" %>
+        </p>
+      <% end %>
+    </div>
+  </section>
+</div>
